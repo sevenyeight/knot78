@@ -23,9 +23,117 @@
     --faint-text: #6a6058;
   }
 
-  /* ... remaining styles and content from your guide ... */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  .container { max-width: 800px; margin: 0 auto; }
+
+  h1 { 
+    font-family: 'Playfair Display', serif; 
+    font-size: 3rem; 
+    color: var(--gold); 
+    text-align: center; 
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--faint);
+    padding-bottom: 10px;
+  }
+
+  .section-title {
+    color: var(--rust);
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2rem 0 1rem;
+    border-left: 4px solid var(--rust);
+    padding-left: 15px;
+  }
+
+  .knot-card {
+    background: var(--aged);
+    border: 1px solid var(--faint);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+
+  .knot-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 5px;
+  }
+
+  .knot-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--mid);
+    margin-bottom: 15px;
+  }
+
+  .instruction-step {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .instruction-step::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--moss);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.8rem;
+    color: var(--faint-text);
+    font-family: 'IBM Plex Mono', monospace;
+  }
 </style>
 </head>
 <body>
-  </body>
+
+<div class="container">
+  <h1>78 KNOTS</h1>
+
+  <div class="section-title">Common & Simple</div>
+  
+  <div class="knot-card">
+    <div class="knot-name">Improved Clinch Knot</div>
+    <div class="knot-meta">Use: Lures & Swivels | Strength: High</div>
+    <div class="instruction-step">Thread the line through the eye of the hook.</div>
+    <div class="instruction-step">Wrap the tag end around the standing line 5-7 times.</div>
+    <div class="instruction-step">Thread the end through the small loop next to the eye, then back through the large loop created.</div>
+  </div>
+
+  <div class="knot-card">
+    <div class="knot-name">Palomar Knot</div>
+    <div class="knot-meta">Use: Direct-to-line | Strength: Maximum</div>
+    <div class="instruction-step">Double about 6 inches of line and pass the loop through the hook eye.</div>
+    <div class="instruction-step">Tie a loose overhand knot with the loop.</div>
+    <div class="instruction-step">Pass the hook through the loop and pull both ends to tighten.</div>
+  </div>
+
+  <div class="section-title">Specialized Rigging</div>
+
+  <div class="knot-card">
+    <div class="knot-name">Texas Rig (Weedless)</div>
+    <div class="knot-meta">Use: Heavy Cover / "Underwater Trees" | Difficulty: Advanced</div>
+    <div class="instruction-step">Thread the hook tip through the top of the lure and pull it through about 1/4 inch.</div>
+    <div class="instruction-step">Rotate the hook so the point faces back toward the lure body.</div>
+    <div class="instruction-step">Bury the hook point slightly inside the plastic so it is not exposed.</div>
+  </div>
+
+  <footer>78 FSH Field Reference — LA & OC Waterways</footer>
+</div>
+
+</body>
 </html>
